@@ -54,18 +54,16 @@ function App() {
             Step into one of the stunning showrooms at the best furniture stores in Chhattisgarh and find the perfect pieces to make your home reflect your style and personality.</p>
         </Container>
       </Jumbotron>
-      <Container className="logo-family no-padding">
-        <Row className="no-margin">
-          <Col className="logo-pod">
-            <img src={sk_industries_logo} className="logo" alt="sk industries logo"/>
-          </Col>
-          <Col className="logo-pod">
-            <img src={chhabra_logo} className="logo" alt="chhabra enterprises logo"/>
-          </Col>
-          <Col className="logo-pod">
-            <img src={arihant_industries_logo} className="logo" alt="arihant industries logo"/>
-          </Col>
-        </Row>
+      <Container className="row logo-family no-padding">
+        <div className="col-s-3 logo-pod col-3">
+          <img src={sk_industries_logo} className="logo" alt="sk industries logo"/>
+        </div>
+        <div className="col-s-3 logo-pod col-3">
+          <img src={chhabra_logo} className="logo" alt="chhabra enterprises logo"/>
+        </div>
+        <div className="col-s-3 logo-pod col-3">
+          <img src={arihant_industries_logo} className="logo" alt="arihant industries logo"/>
+        </div>
       </Container>
       {/* <CardGroup>
         <Card style={{ width: '18rem' }}>
@@ -108,45 +106,41 @@ function App() {
         </Container>
       </Jumbotron>
       <Jumbotron className="last-jumbotron">
-        <Container>
-          <Row>
-            <Col className="align-center footer-about-us">
+        <div className="footer-container">
+            <div className="col-s-3 align-center footer-about-us">
               <h4>ABOUT</h4>
               <p>The Chhabra Group is a family owned business in the city of Rajnandgaon, Chhattisgarh.&nbsp;
                 We started in a small warehouse over thirty years ago selling steel chests and have since grown to sell and deliver furniture all throughout the Chhattisgarh.&nbsp;
                 When you come to us, you can be rest assured that we will work hard to find exactly what you’re looking for and we will then get it delivered to your home as quickly as possible!&nbsp;
                 Our team is dedicated to helping families build the homes they love by providing high-quality furniture at the competitive prices.</p>
-            </Col>
-            <Col className="align-center footer-locations">
+            </div>
+            <div className="col-s-3 align-center footer-locations">
               <h4>OUR LOCATIONS</h4>
               <p>Bhilai</p>
               <p>Durg</p>
               <p>Raipur</p>
               <p>Rajnandgaon</p>
-            </Col>
-            <Col className="align-center">
+            </div>
+            <div className="col-s-3 align-center">
               <h4>NEWSLETTER</h4>
               <Form className="footer-newsletter">
                 <Form.Group controlId="formNewsLetter">
                   <Form.Text className="text-muted">
                     We'll never share your email with anyone else.
                   </Form.Text>
-                  <Form.Control type="email" placeholder="Enter email.." />
+                  <Form.Control type="email" placeholder="Enter email.." className="footer-newsletter-email"/>
                 </Form.Group>
                 <Button variant="primary" type="submit" className="footer-newsletter-submit">
                   Subscribe
                 </Button>
               </Form>
-            </Col>
-          </Row>
-        </Container>
+            </div>
+        </div>
         <div className="footer">
-          <Row>
-            <Col>&copy; 2020 <strong>The Chhabra Group</strong>. All Rights Reserved.</Col>
-            <Col>
+            <div>&copy; 2020 <strong>The Chhabra Group</strong>. All Rights Reserved.</div>
+            <div>
               Made with &hearts; in Chhattisgarh, India.
-            </Col>
-          </Row>
+            </div>
         </div>
       </Jumbotron>
     </div>

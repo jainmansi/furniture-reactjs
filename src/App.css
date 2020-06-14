@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box !important;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 .top-nav {
   background-color: #ffffff;
 }
@@ -12,7 +22,7 @@
   background-color: #f9f9f9 !important;
   height: auto !important;
   margin-bottom: 0px !important;
-  font-size: 30px;
+  font-size: x-large;
   color: #4f4f4f;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
@@ -31,7 +41,7 @@
 
 .logo {
   opacity: 0.7 !important;
-  width: 33% !important;
+  width: 50% !important;
 }
 
 .logo-pod {
@@ -42,11 +52,11 @@
 }
 
 .logo-family {
-  text-align: center !important;
   margin: auto !important;
   width: 100% !important;
   background-color: #f9f9f9 !important;
   max-width: none !important;
+  display: flex !important;
 }
 
 .no-margin {
@@ -74,6 +84,11 @@
   padding-top: 1em;
 }
 
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
 h4 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
@@ -89,6 +104,11 @@ h4 {
   margin: auto;
 }
 
+.footer-newsletter-email {
+  width: 60% !important;
+  margin: auto !important;
+}
+
 .text-muted {
   margin-bottom: 1em;
 }
@@ -96,4 +116,45 @@ h4 {
 .footer-newsletter-submit {
   background-color: #d0ae5e !important;
   border: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25% !important;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25% !important;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100% !important;
+}
+
+.footer-container {
+  display: flex !important;
 }
