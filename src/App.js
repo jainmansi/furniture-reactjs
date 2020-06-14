@@ -31,10 +31,6 @@ function App() {
             src={carousel1}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>Measured To Perfection</h3>
-            <p>Dream a space. Trust us to make it come to life.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -42,10 +38,6 @@ function App() {
             src={carousel2}
             alt="Second slide"
           />
-          <Carousel.Caption>
-            <h3>Measured To Perfection</h3>
-            <p>Dream a space. Trust us to make it come to life.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -53,10 +45,6 @@ function App() {
             src={carousel3}
             alt="Third slide"
           />
-          <Carousel.Caption>
-            <h3>Measured To Perfection</h3>
-            <p>Dream a space. Trust us to make it come to life.</p>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       <Jumbotron className="about">
