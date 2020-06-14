@@ -140,12 +140,14 @@ function App() {
             </Col>
           </Row>
         </Container>
-        <Row className="footer">
-          <Col>&copy; 2020 <strong>The Chhabra Group</strong>. All Rights Reserved.</Col>
-          <Col>
-            Made with &hearts; in Chhattisgarh, India.
-          </Col>
-        </Row>
+        <div className="footer">
+          <Row>
+            <Col>&copy; 2020 <strong>The Chhabra Group</strong>. All Rights Reserved.</Col>
+            <Col>
+              Made with &hearts; in Chhattisgarh, India.
+            </Col>
+          </Row>
+        </div>
       </Jumbotron>
     </div>
   );
